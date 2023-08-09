@@ -4,6 +4,7 @@
  */
 package natacion;
 
+import Model.client.Client;
 import Model.config.Conexion;
 
 /**
@@ -18,6 +19,15 @@ public class Natacion extends Conexion{
     public static void main(String[] args) {
         Conexion con = new Conexion();
         con.getConexion();
+        
+        
+        // prueba de los modelos
+        Client client = new Client();
+        client.setId(1);
+        client.setName("Adalberta");
+        client.setLastName("Martinez");
+        
+        System.out.println(client.getId()+ " - " + client.getName() + " - " + client.getLastName());
     }
     
 }
